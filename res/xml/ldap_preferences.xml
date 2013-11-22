@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_principal" >
+
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="pref_ldapurl"
+        android:summary="@string/pref_ldap_url_desc"
+        android:title="@string/pref_ldap_url" />
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="pref_ldap_basedn"
+        android:summary="@string/pref_ldap_basedn_desc"
+        android:title="@string/pref_ldap_basedn" />
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="pref_ldap_userdn"
+        android:summary="@string/pref_ldap_userdn_desc"
+        android:title="@string/pref_ldap_userdn" />
+    <EditTextPreference
+        android:defaultValue=""
+        android:inputType="textPassword"
+        android:key="pref_ldap_password"
+        android:summary="@string/pref_ldap_password_desc"
+        android:title="@string/pref_ldap_password" />
+
+    <PreferenceCategory android:title="@string/pref_title_callresolver" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_active"
+            android:title="@string/pref_active" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_skip_contacts"
+            android:summary="@string/pref_skip_contacts_desc"
+            android:title="@string/pref_skip_contacts" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_use_cache"
+            android:summary="@string/pref_use_cache_desc"
+            android:title="@string/pref_use_cache" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_resolve_if_no_match"
+            android:summary="@string/pref_resolve_no_match_desc"
+            android:title="@string/pref_resolve_no_match" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

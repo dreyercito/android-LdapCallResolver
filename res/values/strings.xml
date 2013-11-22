@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LdapCallResolver</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Rules</string>
+    <string name="title_section3">LdapTest</string>
+    <string name="agendabutton">Contacts</string>
+    <string name="testbutton">Test!</string>
+    <string name="testresults">Results:</string>
+    <string name="addbutton">Add</string>
+    <string name="homeprefbutton">Preferences</string>
+    <string name="homeactivebutton">Enable</string>
+    <string name="homeinactivebutton">Disable</string>
+    
+    <string name="statusactive">Service is ENABLED</string>
+    <string name="statusinactive">Service is DISABLED</string>
+    <string name="delallbutton">Delete ALL</string>
+    <string name="stopcheckbox">Stop if match</string>
+    <string name="error_pref">Preferences are NOT set!</string>
+
+    <!-- Preferences -->
+    <string name="pref_ldap_url">LDAP Url:</string>
+    <string name="pref_ldap_url_desc">The server ldap url (eg: ldaps://myserver.company.com)</string>
+    <string name="pref_ldap_basedn">Base DN:</string>
+    <string name="pref_ldap_basedn_desc">The Base DN is the starting point used for the searches in the AD hierarchy (eg: o=company,c=com)</string>
+    <string name="pref_ldap_userdn">User DN:</string>
+    <string name="pref_ldap_userdn_desc">The User DN is the user to authenticate to (empty for guest) (eg: cn=myusername,ou=users,o=company,c=com )</string>
+    <string name="pref_ldap_password">Password:</string>
+    <string name="pref_ldap_password_desc">Password for the User DN specified</string>
+    <string name="pref_title_callresolver">Resolver Behaviour</string>
+    <string name="pref_active">On</string>
+    <string name="pref_use_cache">Cache</string>
+    <string name="pref_use_cache_desc">Use a local cache for ldap queries</string>
+    <string name="pref_skip_contacts">Skip contacts</string>
+    <string name="pref_skip_contacts_desc">Skip if number is in Contacts</string>
+    <string name="pref_resolve_no_match">No match resolve</string>
+    <string name="pref_resolve_no_match_desc">If no rule matches, use number as is</string>
+    <string name="rule_add_error_empty_regexp_in">Empty regexp in</string>
+    <string name="rule_add_error_empty_regexp_out">Empty regexp out</string>
+    <string name="rule_add_error_regexp_in">Invalid regexp in</string>
+    <string name="rule_add_error_capture_regexp_out">Capture groups not used</string>
+    
+</resources>

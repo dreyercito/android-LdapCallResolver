@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingTop="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"    
+    >
+
+     <TextView
+        android:id="@+id/ruleEdit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regexp In"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+    <EditText
+        android:id="@+id/editRegexpIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="\\d{9}"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/ruleEdit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regexp Out"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingTop="50dp" />
+
+    <EditText
+        android:id="@+id/editRegexpOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="+34${1}"
+        android:ems="10"/>
+    
+     <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stopcheckbox"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <TextView
+        android:id="@+id/empty2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingTop="20dp" />
+     
+    <Button
+        android:id="@+id/ruleAddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttoncustom"
+        android:textColor="@android:color/white"
+        android:text="@string/addbutton" />
+    
+</LinearLayout>
